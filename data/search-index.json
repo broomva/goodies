@@ -1,5 +1,18 @@
 [
   {
+    "id": "design-engineer-tools",
+    "title": "Design Engineer Tools",
+    "tagline": "A curated list of useful tools for web-focused design engineers.",
+    "category": "developer-tools",
+    "tags": [
+      "design-engineering",
+      "developer-tools",
+      "ui-components",
+      "design-inspiration"
+    ],
+    "url": "https://designengineer.tools/"
+  },
+  {
     "id": "checklist-design",
     "title": "Checklist Design",
     "tagline": "Design checklists for websites, web apps, mobile, components, and flows.",

@@ -1,0 +1,24 @@
+{
+  "id": "design-engineer-tools",
+  "url": "https://designengineer.tools/",
+  "title": "Design Engineer Tools",
+  "category": "developer-tools",
+  "subCategory": "design-engineering",
+  "tagline": "A curated list of useful tools for web-focused design engineers.",
+  "summary": "Comprehensive directory curated by James Warner aggregating best-in-class tools across 15+ specialized domains, including web design inspiration, AI code generators, UI component libraries, and CSS/color utilities.",
+  "highlights": [
+    "Curated specifically for design engineers bridging UI design and web development",
+    "Covers 15+ domains including Inspiration, AI Code, UI Components, and Web Utilities",
+    "Fast, clean, dark-mode reference directory with direct links to tools like shadcn/ui and Cursor"
+  ],
+  "tags": [
+    "design-engineering",
+    "developer-tools",
+    "ui-components",
+    "design-inspiration"
+  ],
+  "favicon": "https://www.google.com/s2/favicons?domain=designengineer.tools",
+  "kgEntity": "research/entities/tool/design-engineer-tools.md",
+  "qualityScore": 9.4,
+  "addedAt": "2026-08-08T16:53:00Z"
+}

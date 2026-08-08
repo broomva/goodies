@@ -7,7 +7,7 @@
     },
     "developer-tools": {
       "name": "Developer Tools",
-      "count": 1,
+      "count": 2,
       "description": "Tools, CLIs, platforms, and utilities that accelerate engineering workflows."
     },
     "ui-components": {
@@ -31,5 +31,5 @@
       "description": "Curated Ai Infrastructure resources and references."
     }
   },
-  "updatedAt": "2026-08-08T15:10:52.069974+00:00"
+  "updatedAt": "2026-08-08T16:53:18.192294+00:00"
 }
