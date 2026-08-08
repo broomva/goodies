@@ -1,29 +1,60 @@
+/* ============================================================
+   Goodies — Broomva Design System Integration
+   Monochrome restraint on the blue axis (OKLCH hue ~265-272)
+   Earned glass (overlays & composer only), matte cards,
+   Broomva typography tokens & blue undertow accents.
+   ============================================================ */
+
 :root {
-  --bg-main: hsl(222, 35%, 7%);
-  --bg-card: hsla(222, 30%, 12%, 0.7);
-  --bg-card-hover: hsla(222, 30%, 16%, 0.85);
-  --bg-surface: hsla(222, 25%, 14%, 0.6);
-  --border-subtle: hsla(222, 20%, 25%, 0.4);
-  --border-glow: hsla(250, 85%, 65%, 0.5);
-  
-  --accent-primary: hsl(250, 85%, 65%);
-  --accent-cyan: hsl(185, 90%, 55%);
-  --accent-emerald: hsl(155, 80%, 50%);
-  --accent-amber: hsl(38, 95%, 60%);
-  
-  --text-main: hsl(210, 40%, 98%);
-  --text-muted: hsl(215, 20%, 65%);
-  --text-dim: hsl(215, 15%, 45%);
-  
-  --radius-lg: 16px;
-  --radius-md: 12px;
-  --radius-sm: 8px;
-  --font-heading: 'Outfit', -apple-system, sans-serif;
-  --font-body: 'Inter', -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-  
-  --shadow-glow: 0 10px 30px -10px rgba(120, 80, 255, 0.25);
-  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.4);
+  /* ── Broomva OKLCH Blue-Axis Tokens ───────────────────────── */
+  --bv-ink:            oklch(0.175 0.022 265);
+  --bv-white:          oklch(1 0 0);
+
+  --bv-gray-50:        oklch(0.978 0.002 265);
+  --bv-gray-100:       oklch(0.945 0.004 265);
+  --bv-gray-200:       oklch(0.915 0.005 265);
+  --bv-gray-300:       oklch(0.84 0.006 265);
+  --bv-gray-400:       oklch(0.76 0.008 265);
+  --bv-gray-500:       oklch(0.68 0.010 265);
+  --bv-gray-600:       oklch(0.50 0.015 265);
+  --bv-gray-700:       oklch(0.38 0.020 265);
+  --bv-gray-800:       oklch(0.30 0.022 265);
+  --bv-gray-900:       oklch(0.23 0.022 265);
+
+  --bv-blue:           oklch(0.60 0.12 260);
+  --bv-blue-accent:    oklch(0.65 0.14 235);
+  --bv-cyan:           oklch(0.72 0.13 220);
+  --bv-emerald:        oklch(0.65 0.17 152);
+
+  --bv-glow-blue:      oklch(0.62 0.18 258);
+  --bv-glow-ice:       oklch(0.84 0.07 240);
+  --bv-glow-cyan:      oklch(0.72 0.13 220);
+
+  /* ── Deep-blue Canvas (Dark default) ──────────────────────── */
+  --background:        oklch(0.135 0.020 272);
+  --foreground:        oklch(0.965 0.004 265);
+  --card:              oklch(0.175 0.025 272);
+  --card-hover:        oklch(0.205 0.028 272);
+  --card-foreground:   oklch(0.965 0.004 265);
+  --muted:             oklch(0.185 0.024 272);
+  --muted-foreground:  oklch(0.65 0.020 270);
+  --border:            oklch(0.62 0.05 268 / 0.14);
+  --border-hover:      oklch(0.60 0.12 260 / 0.35);
+  --ring:              var(--bv-blue);
+
+  /* ── Glass Tokens (Earned on floating elements ONLY) ─────── */
+  --glass-surface:       oklch(0.195 0.026 272 / 0.82);
+  --glass-surface-heavy: oklch(0.205 0.026 272 / 0.92);
+  --glass-border:        oklch(0.62 0.06 265 / 0.22);
+  --glass-light-line:    oklch(1 0 0 / 0.12);
+
+  /* ── Typography & Shadows ────────────────────────────────── */
+  --font-sans:     ui-sans-serif, -apple-system, system-ui, "Inter", BlinkMacSystemFont, sans-serif;
+  --font-heading:  "Outfit", "Inter", var(--font-sans);
+  --font-mono:     ui-monospace, "JetBrains Mono", SFMono-Regular, Menlo, monospace;
+
+  --shadow-card-hover: 0 8px 24px oklch(0 0 0 / 0.4), 0 0 24px oklch(0.60 0.12 260 / 0.15);
+  --shadow-composer:   0 4px 12px oklch(0 0 0 / 0.3), 0 0 40px oklch(0.60 0.12 260 / 0.14);
 }
 
 * {
@@ -37,12 +68,13 @@
 }
 
 body {
-  background-color: var(--bg-main);
-  color: var(--text-main);
-  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Background Atmosphere */
@@ -57,24 +89,24 @@ body {
 .glow-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(120px);
-  opacity: 0.25;
+  filter: blur(140px);
+  opacity: 0.18;
 }
 
 .orb-1 {
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, var(--accent-primary), transparent 70%);
-  top: -100px;
-  left: -100px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--bv-glow-blue), transparent 70%);
+  top: -150px;
+  left: -150px;
 }
 
 .orb-2 {
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, var(--accent-cyan), transparent 70%);
-  bottom: -150px;
-  right: -150px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, var(--bv-glow-cyan), transparent 70%);
+  bottom: -200px;
+  right: -200px;
 }
 
 .layout-container {
@@ -90,7 +122,7 @@ body {
   align-items: center;
   margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border);
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -102,15 +134,15 @@ body {
 }
 
 .brand-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-md);
-  background: linear-gradient(135deg, var(--accent-primary), var(--accent-cyan));
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--bv-blue), var(--bv-cyan));
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  box-shadow: var(--shadow-glow);
+  color: oklch(0.98 0 0);
+  box-shadow: 0 0 20px oklch(0.60 0.12 260 / 0.3);
 }
 
 .brand-title {
@@ -118,14 +150,12 @@ body {
   font-size: 1.85rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #fff 40%, var(--text-muted));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--foreground);
 }
 
 .brand-subtitle {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: var(--muted-foreground);
 }
 
 .header-actions {
@@ -135,28 +165,29 @@ body {
 }
 
 .vault-stat-badge {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  padding: 0.4rem 0.85rem;
-  border-radius: var(--radius-sm);
+  background: oklch(0.20 0.028 272);
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.85rem;
+  border-radius: 8px;
   font-size: 0.825rem;
   font-weight: 600;
-  color: var(--accent-cyan);
+  color: var(--bv-cyan);
+  font-family: var(--font-mono);
 }
 
 .vault-stat-badge.secondary {
-  color: var(--accent-primary);
+  color: var(--bv-blue);
 }
 
 .btn-github {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-main);
+  background: oklch(0.20 0.028 272);
+  border: 1px solid var(--border);
+  color: var(--foreground);
   padding: 0.45rem 1rem;
-  border-radius: var(--radius-sm);
+  border-radius: 8px;
   font-size: 0.85rem;
   font-weight: 500;
   text-decoration: none;
@@ -164,13 +195,13 @@ body {
 }
 
 .btn-github:hover {
-  border-color: var(--accent-primary);
-  box-shadow: 0 0 12px hsla(250, 85%, 65%, 0.3);
+  border-color: var(--bv-blue);
+  box-shadow: 0 0 16px oklch(0.60 0.12 260 / 0.25);
 }
 
-/* Controls */
+/* Controls — Earned Glass Composer */
 .controls-section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.25rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -180,21 +211,23 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+  background: var(--glass-surface-heavy);
+  backdrop-filter: blur(20px) saturate(1.8);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
   padding: 0.85rem 1.25rem;
-  backdrop-filter: blur(16px);
+  box-shadow: inset 0 1px 0 var(--glass-light-line), var(--shadow-composer);
   transition: all 0.25s ease;
 }
 
 .search-box:focus-within {
-  border-color: var(--accent-primary);
-  box-shadow: var(--shadow-glow);
+  border-color: var(--bv-blue);
+  box-shadow: inset 0 1px 0 var(--glass-light-line), 0 0 30px oklch(0.60 0.12 260 / 0.25);
 }
 
 .search-icon {
-  color: var(--text-muted);
+  color: var(--muted-foreground);
   margin-right: 0.75rem;
 }
 
@@ -203,32 +236,32 @@ body {
   background: transparent;
   border: none;
   outline: none;
-  color: var(--text-main);
+  color: var(--foreground);
   font-size: 1rem;
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
 }
 
 .search-shortcut {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: oklch(0.24 0.03 272);
+  border: 1px solid var(--border);
   border-radius: 4px;
   padding: 0.15rem 0.5rem;
   font-size: 0.75rem;
   font-family: var(--font-mono);
-  color: var(--text-muted);
+  color: var(--muted-foreground);
 }
 
 .btn-clear {
   background: none;
   border: none;
-  color: var(--text-muted);
+  color: var(--muted-foreground);
   cursor: pointer;
   padding: 0.2rem 0.5rem;
   font-size: 1.1rem;
 }
 
 .btn-clear:hover {
-  color: var(--text-main);
+  color: var(--foreground);
 }
 
 /* Taxonomy Bar */
@@ -244,9 +277,9 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-muted);
+  background: oklch(0.18 0.024 272);
+  border: 1px solid var(--border);
+  color: var(--muted-foreground);
   padding: 0.45rem 1rem;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -257,26 +290,26 @@ body {
 }
 
 .cat-pill:hover {
-  color: var(--text-main);
-  border-color: var(--text-muted);
+  color: var(--foreground);
+  border-color: var(--muted-foreground);
 }
 
 .cat-pill.active {
-  background: linear-gradient(135deg, var(--accent-primary), hsl(265, 80%, 55%));
-  color: #fff;
+  background: linear-gradient(135deg, var(--bv-blue), oklch(0.55 0.15 280));
+  color: oklch(0.99 0 0);
   border-color: transparent;
-  box-shadow: 0 4px 12px hsla(250, 85%, 65%, 0.35);
+  box-shadow: 0 4px 14px oklch(0.60 0.12 260 / 0.35);
 }
 
 .cat-count {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.3);
   padding: 0.1rem 0.45rem;
   border-radius: 10px;
   font-size: 0.75rem;
   font-family: var(--font-mono);
 }
 
-/* Grid & Cards */
+/* Grid & Matte Cards */
 .vault-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -284,11 +317,10 @@ body {
 }
 
 .goodie-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
   padding: 1.5rem;
-  backdrop-filter: blur(12px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -305,16 +337,16 @@ body {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-cyan));
+  background: linear-gradient(90deg, var(--bv-blue), var(--bv-cyan));
   opacity: 0;
   transition: opacity 0.25s ease;
 }
 
 .goodie-card:hover {
   transform: translateY(-4px);
-  background: var(--bg-card-hover);
-  border-color: var(--border-glow);
-  box-shadow: var(--shadow-card), var(--shadow-glow);
+  background: var(--card-hover);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .goodie-card:hover::before {
@@ -338,16 +370,16 @@ body {
 .card-favicon {
   width: 24px;
   height: 24px;
-  border-radius: 4px;
+  border-radius: 6px;
   object-fit: cover;
-  background: var(--bg-surface);
+  background: oklch(0.22 0.028 272);
 }
 
 .card-title {
   font-family: var(--font-heading);
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--text-main);
+  color: var(--foreground);
 }
 
 .card-badge {
@@ -355,16 +387,16 @@ body {
   font-weight: 600;
   padding: 0.2rem 0.65rem;
   border-radius: 12px;
-  background: hsla(185, 90%, 55%, 0.12);
-  color: var(--accent-cyan);
-  border: 1px solid hsla(185, 90%, 55%, 0.25);
+  background: oklch(0.72 0.13 220 / 0.12);
+  color: var(--bv-cyan);
+  border: 1px solid oklch(0.72 0.13 220 / 0.25);
   text-transform: capitalize;
   white-space: nowrap;
 }
 
 .card-tagline {
   font-size: 0.925rem;
-  color: var(--text-muted);
+  color: var(--muted-foreground);
   margin-bottom: 1rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -382,7 +414,7 @@ body {
 
 .card-highlight-item {
   font-size: 0.825rem;
-  color: var(--text-muted);
+  color: var(--muted-foreground);
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -398,7 +430,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px solid var(--border);
   margin-top: auto;
 }
 
@@ -411,14 +443,14 @@ body {
 .card-tag {
   font-size: 0.725rem;
   font-family: var(--font-mono);
-  color: var(--text-dim);
-  background: var(--bg-surface);
+  color: oklch(0.60 0.02 270);
+  background: oklch(0.22 0.028 272);
   padding: 0.15rem 0.5rem;
   border-radius: 4px;
 }
 
 .card-link-icon {
-  color: var(--accent-primary);
+  color: var(--bv-blue);
   display: flex;
   align-items: center;
 }
@@ -427,9 +459,9 @@ body {
 .empty-state {
   text-align: center;
   padding: 4rem 2rem;
-  background: var(--bg-card);
-  border: 1px dashed var(--border-subtle);
-  border-radius: var(--radius-lg);
+  background: var(--card);
+  border: 1px dashed var(--border);
+  border-radius: 16px;
 }
 
 .empty-icon {
@@ -443,26 +475,27 @@ body {
 }
 
 .empty-state p {
-  color: var(--text-muted);
+  color: var(--muted-foreground);
   margin-bottom: 1.5rem;
 }
 
 .btn-reset {
-  background: var(--accent-primary);
+  background: var(--bv-blue);
   color: #fff;
   border: none;
   padding: 0.6rem 1.25rem;
-  border-radius: var(--radius-sm);
+  border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
 }
 
-/* Modal */
+/* Modal — Earned Glass Heavy Surface */
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(8px);
+  background: oklch(0.14 0.025 270 / 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   z-index: 100;
   display: flex;
   align-items: center;
@@ -471,25 +504,27 @@ body {
 }
 
 .modal-surface {
-  background: hsl(222, 30%, 10%);
-  border: 1px solid var(--border-glow);
-  border-radius: var(--radius-lg);
+  background: var(--glass-surface-heavy);
+  backdrop-filter: blur(28px) saturate(2.0);
+  -webkit-backdrop-filter: blur(28px) saturate(2.0);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
   max-width: 720px;
   width: 100%;
   max-height: 85vh;
   overflow-y: auto;
   position: relative;
   padding: 2.25rem;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), var(--shadow-glow);
+  box-shadow: inset 0 1px 0 var(--glass-light-line), 0 24px 56px oklch(0.30 0.06 262 / 0.35);
 }
 
 .modal-close {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-muted);
+  background: oklch(0.24 0.03 272);
+  border: 1px solid var(--border);
+  color: var(--muted-foreground);
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -501,17 +536,17 @@ body {
 }
 
 .modal-close:hover {
-  color: var(--text-main);
-  border-color: var(--accent-primary);
+  color: var(--foreground);
+  border-color: var(--bv-blue);
 }
 
 /* Skeleton */
 .skeleton-card {
   height: 220px;
-  background: linear-gradient(90deg, var(--bg-card) 25%, hsla(222, 30%, 18%, 0.6) 50%, var(--bg-card) 75%);
+  background: linear-gradient(90deg, var(--card) 25%, oklch(0.24 0.03 272) 50%, var(--card) 75%);
   background-size: 200% 100%;
   animation: loading 1.5s infinite;
-  border-radius: var(--radius-lg);
+  border-radius: 16px;
 }
 
 @keyframes loading {
