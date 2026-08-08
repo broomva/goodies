@@ -17,6 +17,36 @@ document.addEventListener('DOMContentLoaded', () => {
   const detailModal = document.getElementById('detail-modal');
   const modalContent = document.getElementById('modal-content');
   const modalClose = document.getElementById('modal-close');
+  const themeToggle = document.getElementById('theme-toggle');
+
+  // Theme Toggle Management
+  function initTheme() {
+    const savedTheme = localStorage.getItem('goodies-theme');
+    const initialTheme = savedTheme || 'dark';
+    setTheme(initialTheme);
+  }
+
+  function setTheme(theme) {
+    const sunIcon = themeToggle ? themeToggle.querySelector('.sun-icon') : null;
+    const moonIcon = themeToggle ? themeToggle.querySelector('.moon-icon') : null;
+    if (theme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      if (sunIcon) sunIcon.hidden = true;
+      if (moonIcon) moonIcon.hidden = false;
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      if (sunIcon) sunIcon.hidden = false;
+      if (moonIcon) moonIcon.hidden = true;
+    }
+    localStorage.setItem('goodies-theme', theme);
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+      setTheme(currentTheme === 'light' ? 'dark' : 'light');
+    });
+  }
 
   // Fetch Vault Data
   async function loadVaultData() {
@@ -336,5 +366,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
   }
 
+  initTheme();
   loadVaultData();
 });
