@@ -2,7 +2,7 @@
   "categories": {
     "design-inspiration": {
       "name": "Design Inspiration",
-      "count": 2,
+      "count": 3,
       "description": "High-fidelity design systems, web aesthetics, typography, and visual patterns."
     },
     "developer-tools": {
@@ -31,5 +31,5 @@
       "description": "Curated Ai Infrastructure resources and references."
     }
   },
-  "updatedAt": "2026-08-08T16:53:18.192294+00:00"
+  "updatedAt": "2026-08-08T17:02:26.278170+00:00"
 }

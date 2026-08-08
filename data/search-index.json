@@ -1,5 +1,19 @@
 [
   {
+    "id": "getdesign-md",
+    "title": "getdesign.md",
+    "tagline": "DESIGN.md collection and design system analysis catalog for AI coding agents.",
+    "category": "design-inspiration",
+    "tags": [
+      "design-md",
+      "ai-coding",
+      "design-system",
+      "developer-tools",
+      "design-inspiration"
+    ],
+    "url": "https://getdesign.md/"
+  },
+  {
     "id": "design-engineer-tools",
     "title": "Design Engineer Tools",
     "tagline": "A curated list of useful tools for web-focused design engineers.",

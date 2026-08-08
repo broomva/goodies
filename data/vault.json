@@ -1,5 +1,30 @@
 [
   {
+    "id": "getdesign-md",
+    "url": "https://getdesign.md/",
+    "title": "getdesign.md",
+    "category": "design-inspiration",
+    "subCategory": "design-systems",
+    "tagline": "DESIGN.md collection and design system analysis catalog for AI coding agents.",
+    "summary": "A browsable collection of 300+ independent design system analyses following Google's official DESIGN.md specification. Drop one into your repository to provide AI coding agents with colors, typography, spacing, and visual language guidance.",
+    "highlights": [
+      "300+ catalog of real-world website DESIGN.md analyses",
+      "Conforms to Google's official DESIGN.md specification for AI coders",
+      "Prevents generic AI layouts by providing structured visual language constraints"
+    ],
+    "tags": [
+      "design-md",
+      "ai-coding",
+      "design-system",
+      "developer-tools",
+      "design-inspiration"
+    ],
+    "favicon": "https://www.google.com/s2/favicons?domain=getdesign.md",
+    "kgEntity": "research/entities/tool/getdesign-md.md",
+    "qualityScore": 9.6,
+    "addedAt": "2026-08-08T17:02:00Z"
+  },
+  {
     "id": "design-engineer-tools",
     "url": "https://designengineer.tools/",
     "title": "Design Engineer Tools",
