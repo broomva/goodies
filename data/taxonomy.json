@@ -1,0 +1,35 @@
+{
+  "categories": {
+    "design-inspiration": {
+      "name": "Design Inspiration",
+      "count": 2,
+      "description": "High-fidelity design systems, web aesthetics, typography, and visual patterns."
+    },
+    "developer-tools": {
+      "name": "Developer Tools",
+      "count": 1,
+      "description": "Tools, CLIs, platforms, and utilities that accelerate engineering workflows."
+    },
+    "ui-components": {
+      "name": "UI Components",
+      "count": 1,
+      "description": "Component libraries, design tokens, and modular UI building blocks."
+    },
+    "ai-agents": {
+      "name": "AI & Autonomous Agents",
+      "count": 0,
+      "description": "Agent frameworks, LLM integrations, eval suites, and prompt engineering tools."
+    },
+    "papers-research": {
+      "name": "Papers & Research",
+      "count": 0,
+      "description": "Landmark research papers, tech spikes, and empirical benchmarks."
+    },
+    "ai-infrastructure": {
+      "name": "Ai Infrastructure",
+      "count": 1,
+      "description": "Curated Ai Infrastructure resources and references."
+    }
+  },
+  "updatedAt": "2026-08-08T15:10:52.069974+00:00"
+}

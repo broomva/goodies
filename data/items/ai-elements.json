@@ -1,0 +1,19 @@
+{
+  "id": "ai-elements",
+  "url": "https://ai-elements.dev",
+  "title": "AI Elements",
+  "category": "ui-components",
+  "subCategory": "ai-chat",
+  "tagline": "Pre-built, accessible React components for AI chat interfaces.",
+  "summary": "Comprehensive collection of modular React primitives designed specifically for LLM responses, tool calls, streaming text, and prompt inputs.",
+  "highlights": [
+    "Streaming message displays",
+    "Tool execution UI",
+    "Customizable theme tokens"
+  ],
+  "tags": ["react", "ui-kit", "ai-interface"],
+  "favicon": "https://www.google.com/s2/favicons?domain=ai-elements.dev",
+  "kgEntity": "research/entities/tool/ai-elements.md",
+  "qualityScore": 9.2,
+  "addedAt": "2026-08-08T09:30:00Z"
+}

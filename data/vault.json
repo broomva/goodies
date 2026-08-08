@@ -1,0 +1,118 @@
+[
+  {
+    "id": "checklist-design",
+    "url": "https://www.checklist.design",
+    "title": "Checklist Design",
+    "category": "design-inspiration",
+    "subCategory": "design-checklists",
+    "tagline": "Design checklists for websites, web apps, mobile, components, and flows.",
+    "summary": "A curated collection of UI/UX design checklists covering web, mobile, components, user flows, accessibility, and launch readiness. Check every detail and ship better work.",
+    "highlights": [
+      "Comprehensive UI component & flow checklists",
+      "Accessibility & interaction state guidelines",
+      "Launch readiness & developer handoff redlines"
+    ],
+    "tags": [
+      "ui-design",
+      "ux-checklists",
+      "design-system",
+      "accessibility"
+    ],
+    "favicon": "https://www.google.com/s2/favicons?domain=checklist.design",
+    "kgEntity": "research/entities/tool/checklist-design.md",
+    "qualityScore": 9.6,
+    "addedAt": "2026-08-08T15:10:00Z"
+  },
+  {
+    "id": "vllm-engine",
+    "url": "https://vllm.ai",
+    "title": "vLLM Engine",
+    "category": "ai-infrastructure",
+    "subCategory": "llm-serving",
+    "tagline": "Easy, fast, and cheap LLM serving for everyone",
+    "summary": "High-throughput and memory-efficient LLM serving engine featuring PagedAttention for continuous batching and near-zero memory waste.",
+    "highlights": [
+      "PagedAttention KV cache management",
+      "Continuous batching for high concurrency",
+      "Seamless OpenAI-compatible API server"
+    ],
+    "tags": [
+      "ai-infrastructure",
+      "llm-serving",
+      "inference-engine"
+    ],
+    "favicon": "https://www.google.com/s2/favicons?domain=vllm.ai",
+    "kgEntity": "research/entities/tool/vllm.md",
+    "qualityScore": 9.6,
+    "addedAt": "2026-08-08T15:08:25Z"
+  },
+  {
+    "id": "linear-app",
+    "url": "https://linear.app",
+    "title": "Linear",
+    "category": "developer-tools",
+    "subCategory": "issue-tracking",
+    "tagline": "The purposeful tool for modern software development.",
+    "summary": "Fast, keyboard-driven issue tracking with real-time sync, sleek dark mode aesthetics, and deep git integrations.",
+    "highlights": [
+      "Sub-100ms response time",
+      "Full keyboard shortcut mapping",
+      "Automated git workflows"
+    ],
+    "tags": [
+      "issue-tracking",
+      "developer-tools",
+      "productivity"
+    ],
+    "favicon": "https://www.google.com/s2/favicons?domain=linear.app",
+    "kgEntity": "research/entities/tool/linear.md",
+    "qualityScore": 9.8,
+    "addedAt": "2026-08-08T09:30:00Z"
+  },
+  {
+    "id": "stitch-design",
+    "url": "https://stitch.design",
+    "title": "Stitch Design System",
+    "category": "design-inspiration",
+    "subCategory": "design-systems",
+    "tagline": "AI-driven high-fidelity screen design and component generation framework.",
+    "summary": "A powerful platform that bridges prompt-driven UI generation and production-ready clean design systems with automated AST code output.",
+    "highlights": [
+      "Prompt enhancement engine",
+      "AST component generation",
+      "Vite + React integration"
+    ],
+    "tags": [
+      "ui-design",
+      "ai-tools",
+      "design-system"
+    ],
+    "favicon": "https://www.google.com/s2/favicons?domain=stitch.design",
+    "kgEntity": "research/entities/tool/stitch.md",
+    "qualityScore": 9.5,
+    "addedAt": "2026-08-08T09:30:00Z"
+  },
+  {
+    "id": "ai-elements",
+    "url": "https://ai-elements.dev",
+    "title": "AI Elements",
+    "category": "ui-components",
+    "subCategory": "ai-chat",
+    "tagline": "Pre-built, accessible React components for AI chat interfaces.",
+    "summary": "Comprehensive collection of modular React primitives designed specifically for LLM responses, tool calls, streaming text, and prompt inputs.",
+    "highlights": [
+      "Streaming message displays",
+      "Tool execution UI",
+      "Customizable theme tokens"
+    ],
+    "tags": [
+      "react",
+      "ui-kit",
+      "ai-interface"
+    ],
+    "favicon": "https://www.google.com/s2/favicons?domain=ai-elements.dev",
+    "kgEntity": "research/entities/tool/ai-elements.md",
+    "qualityScore": 9.2,
+    "addedAt": "2026-08-08T09:30:00Z"
+  }
+]

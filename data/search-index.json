@@ -1,0 +1,63 @@
+[
+  {
+    "id": "checklist-design",
+    "title": "Checklist Design",
+    "tagline": "Design checklists for websites, web apps, mobile, components, and flows.",
+    "category": "design-inspiration",
+    "tags": [
+      "ui-design",
+      "ux-checklists",
+      "design-system",
+      "accessibility"
+    ],
+    "url": "https://www.checklist.design"
+  },
+  {
+    "id": "vllm-engine",
+    "title": "vLLM Engine",
+    "tagline": "Easy, fast, and cheap LLM serving for everyone",
+    "category": "ai-infrastructure",
+    "tags": [
+      "ai-infrastructure",
+      "llm-serving",
+      "inference-engine"
+    ],
+    "url": "https://vllm.ai"
+  },
+  {
+    "id": "linear-app",
+    "title": "Linear",
+    "tagline": "The purposeful tool for modern software development.",
+    "category": "developer-tools",
+    "tags": [
+      "issue-tracking",
+      "developer-tools",
+      "productivity"
+    ],
+    "url": "https://linear.app"
+  },
+  {
+    "id": "stitch-design",
+    "title": "Stitch Design System",
+    "tagline": "AI-driven high-fidelity screen design and component generation framework.",
+    "category": "design-inspiration",
+    "tags": [
+      "ui-design",
+      "ai-tools",
+      "design-system"
+    ],
+    "url": "https://stitch.design"
+  },
+  {
+    "id": "ai-elements",
+    "title": "AI Elements",
+    "tagline": "Pre-built, accessible React components for AI chat interfaces.",
+    "category": "ui-components",
+    "tags": [
+      "react",
+      "ui-kit",
+      "ai-interface"
+    ],
+    "url": "https://ai-elements.dev"
+  }
+]

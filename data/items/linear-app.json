@@ -1,0 +1,19 @@
+{
+  "id": "linear-app",
+  "url": "https://linear.app",
+  "title": "Linear",
+  "category": "developer-tools",
+  "subCategory": "issue-tracking",
+  "tagline": "The purposeful tool for modern software development.",
+  "summary": "Fast, keyboard-driven issue tracking with real-time sync, sleek dark mode aesthetics, and deep git integrations.",
+  "highlights": [
+    "Sub-100ms response time",
+    "Full keyboard shortcut mapping",
+    "Automated git workflows"
+  ],
+  "tags": ["issue-tracking", "developer-tools", "productivity"],
+  "favicon": "https://www.google.com/s2/favicons?domain=linear.app",
+  "kgEntity": "research/entities/tool/linear.md",
+  "qualityScore": 9.8,
+  "addedAt": "2026-08-08T09:30:00Z"
+}

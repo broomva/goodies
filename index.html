@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goodies — Curated Reference & Tooling</title>
+  <meta name="description" content="A curated public vault of exceptional websites, design references, developer tools, research papers, and software resources.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Fuse.js for Client-Side Fuzzy Search -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+</head>
+<body>
+  <div class="app-background">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+  </div>
+
+  <div class="layout-container">
+    <!-- Header Surface -->
+    <header class="site-header">
+      <div class="header-brand">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">Goodies</h1>
+          <p class="brand-subtitle">Curated directory of design, tooling & research gems</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <span class="vault-stat-badge" id="stat-count">0 Items</span>
+        <span class="vault-stat-badge secondary" id="stat-categories">0 Categories</span>
+        <a href="https://github.com/broomva/goodies" target="_blank" class="btn-github" title="View Source on GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+          Repository
+        </a>
+      </div>
+    </header>
+
+    <!-- Search & Filter Controls -->
+    <section class="controls-section">
+      <div class="search-box">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-input" placeholder="Search resources, tags, tech stacks, or descriptions... (Press '/' to focus)" />
+        <kbd class="search-shortcut">/</kbd>
+        <button id="search-clear" class="btn-clear" hidden>✕</button>
+      </div>
+
+      <!-- Dynamic Taxonomy Categories Bar -->
+      <div class="taxonomy-bar" id="taxonomy-bar">
+        <button class="cat-pill active" data-category="all">
+          <span class="cat-name">All Items</span>
+          <span class="cat-count" id="count-all">0</span>
+        </button>
+        <!-- Dynamic categories injected here -->
+      </div>
+
+      <!-- Filter Tags Bar -->
+      <div class="tags-bar" id="tags-bar" hidden>
+        <span class="tags-label">Filter tags:</span>
+        <div class="tags-scroll" id="tags-scroll"></div>
+      </div>
+    </section>
+
+    <!-- Vault Content Grid -->
+    <main class="vault-grid" id="vault-grid">
+      <!-- Loading Skeleton -->
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+    </main>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="empty-state" hidden>
+      <div class="empty-icon">🔍</div>
+      <h3>No matching goodies found</h3>
+      <p>Try refining your search terms or clearing selected category filters.</p>
+      <button class="btn-reset" id="btn-reset-filters">Reset Filters</button>
+    </div>
+
+    <!-- Item Detail Modal -->
+    <div class="modal-backdrop" id="detail-modal" hidden>
+      <div class="modal-surface">
+        <button class="modal-close" id="modal-close">✕</button>
+        <div class="modal-content" id="modal-content">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>Powered by <strong>bstack</strong> & <code>/goodies</code> skill · Knowledge Graph Integrated</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

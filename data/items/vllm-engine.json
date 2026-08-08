@@ -1,0 +1,23 @@
+{
+  "id": "vllm-engine",
+  "url": "https://vllm.ai",
+  "title": "vLLM Engine",
+  "category": "ai-infrastructure",
+  "subCategory": "llm-serving",
+  "tagline": "Easy, fast, and cheap LLM serving for everyone",
+  "summary": "High-throughput and memory-efficient LLM serving engine featuring PagedAttention for continuous batching and near-zero memory waste.",
+  "highlights": [
+    "PagedAttention KV cache management",
+    "Continuous batching for high concurrency",
+    "Seamless OpenAI-compatible API server"
+  ],
+  "tags": [
+    "ai-infrastructure",
+    "llm-serving",
+    "inference-engine"
+  ],
+  "favicon": "https://www.google.com/s2/favicons?domain=vllm.ai",
+  "kgEntity": "research/entities/tool/vllm.md",
+  "qualityScore": 9.6,
+  "addedAt": "2026-08-08T15:08:25Z"
+}

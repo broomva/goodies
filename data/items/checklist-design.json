@@ -1,0 +1,24 @@
+{
+  "id": "checklist-design",
+  "url": "https://www.checklist.design",
+  "title": "Checklist Design",
+  "category": "design-inspiration",
+  "subCategory": "design-checklists",
+  "tagline": "Design checklists for websites, web apps, mobile, components, and flows.",
+  "summary": "A curated collection of UI/UX design checklists covering web, mobile, components, user flows, accessibility, and launch readiness. Check every detail and ship better work.",
+  "highlights": [
+    "Comprehensive UI component & flow checklists",
+    "Accessibility & interaction state guidelines",
+    "Launch readiness & developer handoff redlines"
+  ],
+  "tags": [
+    "ui-design",
+    "ux-checklists",
+    "design-system",
+    "accessibility"
+  ],
+  "favicon": "https://www.google.com/s2/favicons?domain=checklist.design",
+  "kgEntity": "research/entities/tool/checklist-design.md",
+  "qualityScore": 9.6,
+  "addedAt": "2026-08-08T15:10:00Z"
+}
