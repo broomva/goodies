@@ -1,0 +1,27 @@
+{
+  "id": "strix",
+  "url": "https://github.com/usestrix/strix",
+  "title": "Strix",
+  "category": "security-tools",
+  "subCategory": "penetration-testing",
+  "tagline": "Open-source autonomous AI penetration testing agents that find and fix app vulnerabilities with real exploit validation.",
+  "summary": "Strix is an open-source AI penetration testing tool that deploys autonomous AI hacker agents to dynamically execute code, discover vulnerabilities, and validate findings through real proof-of-concept exploits. Built for developers and security teams, Strix features multi-agent orchestration, full pentest toolkits (recon, exploit, validation), auto-patch generation, compliance-ready reporting, and seamless CI/CD pipeline integration.",
+  "highlights": [
+    "Autonomous AI pentesting agents executing dynamic security analysis and multi-agent team orchestration",
+    "Real exploit validation generating working PoCs to eliminate false positives found in static analysis tools",
+    "Full application security pipeline with recon, exploit, auto-patch generation, compliance reports, and CI/CD scan hooks"
+  ],
+  "tags": [
+    "security",
+    "ai-agents",
+    "pentesting",
+    "vulnerability-scanner",
+    "open-source"
+  ],
+  "favicon": "https://www.google.com/s2/favicons?domain=strix.ai",
+  "ogImage": "https://github.com/usestrix/.github/raw/main/imgs/cover.png",
+  "kgEntity": "research/entities/tool/strix.md",
+  "qualityScore": 9.4,
+  "addedAt": "2026-08-08T19:56:30Z",
+  "updatedAt": "2026-08-08T19:56:30Z"
+}

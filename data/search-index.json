@@ -1,5 +1,19 @@
 [
   {
+    "id": "strix",
+    "title": "Strix",
+    "tagline": "Open-source autonomous AI penetration testing agents that find and fix app vulnerabilities with real exploit validation.",
+    "category": "security-tools",
+    "tags": [
+      "security",
+      "ai-agents",
+      "pentesting",
+      "vulnerability-scanner",
+      "open-source"
+    ],
+    "url": "https://github.com/usestrix/strix"
+  },
+  {
     "id": "getdesign-md",
     "title": "getdesign.md",
     "tagline": "DESIGN.md collection and design system analysis catalog for AI coding agents.",

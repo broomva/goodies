@@ -29,7 +29,12 @@
       "name": "Ai Infrastructure",
       "count": 1,
       "description": "Curated Ai Infrastructure resources and references."
+    },
+    "security-tools": {
+      "name": "Security Tools",
+      "count": 1,
+      "description": "Curated Security Tools resources and references."
     }
   },
-  "updatedAt": "2026-08-08T17:02:26.278170+00:00"
+  "updatedAt": "2026-08-09T00:56:53.484660+00:00"
 }
