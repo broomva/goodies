@@ -1,5 +1,20 @@
 [
   {
+    "id": "inspora",
+    "title": "Inspora",
+    "tagline": "A curated archive of visual design and creative work.",
+    "category": "design-inspiration",
+    "tags": [
+      "design-inspiration",
+      "branding",
+      "web-design",
+      "motion",
+      "3d",
+      "illustration"
+    ],
+    "url": "https://www.inspora.design/"
+  },
+  {
     "id": "strix",
     "title": "Strix",
     "tagline": "Open-source autonomous AI penetration testing agents that find and fix app vulnerabilities with real exploit validation.",
@@ -78,18 +93,6 @@
     "url": "https://linear.app"
   },
   {
-    "id": "stitch-design",
-    "title": "Stitch Design System",
-    "tagline": "AI-driven high-fidelity screen design and component generation framework.",
-    "category": "design-inspiration",
-    "tags": [
-      "ui-design",
-      "ai-tools",
-      "design-system"
-    ],
-    "url": "https://stitch.design"
-  },
-  {
     "id": "ai-elements",
     "title": "AI Elements",
     "tagline": "Pre-built, accessible React components for AI chat interfaces.",
@@ -100,5 +103,17 @@
       "ai-interface"
     ],
     "url": "https://ai-elements.dev"
+  },
+  {
+    "id": "stitch-design",
+    "title": "Stitch Design System",
+    "tagline": "AI-driven high-fidelity screen design and component generation framework.",
+    "category": "design-inspiration",
+    "tags": [
+      "ui-design",
+      "ai-tools",
+      "design-system"
+    ],
+    "url": "https://stitch.design"
   }
 ]

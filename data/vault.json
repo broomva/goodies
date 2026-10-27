@@ -1,5 +1,31 @@
 [
   {
+    "id": "inspora",
+    "url": "https://www.inspora.design/",
+    "title": "Inspora",
+    "category": "design-inspiration",
+    "subCategory": "creative-galleries",
+    "tagline": "A curated archive of visual design and creative work.",
+    "summary": "Inspora collects visual references across web, branding, product, motion, illustration, 3D, and print. Browse recent or featured work for ideas, then follow an entry's original link to explore the creator's source.",
+    "highlights": [
+      "Browse seven creative disciplines in one visual archive",
+      "Switch between latest and featured work",
+      "Individual entries can credit creators and link to original work; a weekly email is available"
+    ],
+    "tags": [
+      "design-inspiration",
+      "branding",
+      "web-design",
+      "motion",
+      "3d",
+      "illustration"
+    ],
+    "favicon": "https://www.inspora.design/brand/inspora-icon-v1.svg",
+    "kgEntity": "research/entities/tool/inspora.md",
+    "qualityScore": 8.0,
+    "addedAt": "2026-10-27T02:42:00Z"
+  },
+  {
     "id": "strix",
     "url": "https://github.com/usestrix/strix",
     "title": "Strix",
@@ -146,29 +172,6 @@
     "addedAt": "2026-08-08T09:30:00Z"
   },
   {
-    "id": "stitch-design",
-    "url": "https://stitch.design",
-    "title": "Stitch Design System",
-    "category": "design-inspiration",
-    "subCategory": "design-systems",
-    "tagline": "AI-driven high-fidelity screen design and component generation framework.",
-    "summary": "A powerful platform that bridges prompt-driven UI generation and production-ready clean design systems with automated AST code output.",
-    "highlights": [
-      "Prompt enhancement engine",
-      "AST component generation",
-      "Vite + React integration"
-    ],
-    "tags": [
-      "ui-design",
-      "ai-tools",
-      "design-system"
-    ],
-    "favicon": "https://www.google.com/s2/favicons?domain=stitch.design",
-    "kgEntity": "research/entities/tool/stitch.md",
-    "qualityScore": 9.5,
-    "addedAt": "2026-08-08T09:30:00Z"
-  },
-  {
     "id": "ai-elements",
     "url": "https://ai-elements.dev",
     "title": "AI Elements",
@@ -189,6 +192,29 @@
     "favicon": "https://www.google.com/s2/favicons?domain=ai-elements.dev",
     "kgEntity": "research/entities/tool/ai-elements.md",
     "qualityScore": 9.2,
+    "addedAt": "2026-08-08T09:30:00Z"
+  },
+  {
+    "id": "stitch-design",
+    "url": "https://stitch.design",
+    "title": "Stitch Design System",
+    "category": "design-inspiration",
+    "subCategory": "design-systems",
+    "tagline": "AI-driven high-fidelity screen design and component generation framework.",
+    "summary": "A powerful platform that bridges prompt-driven UI generation and production-ready clean design systems with automated AST code output.",
+    "highlights": [
+      "Prompt enhancement engine",
+      "AST component generation",
+      "Vite + React integration"
+    ],
+    "tags": [
+      "ui-design",
+      "ai-tools",
+      "design-system"
+    ],
+    "favicon": "https://www.google.com/s2/favicons?domain=stitch.design",
+    "kgEntity": "research/entities/tool/stitch.md",
+    "qualityScore": 9.5,
     "addedAt": "2026-08-08T09:30:00Z"
   }
 ]
