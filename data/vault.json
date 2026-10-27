@@ -1,5 +1,37 @@
 [
   {
+    "id": "pico-cli",
+    "url": "https://github.com/Pico-Developer/PICO-Intelligent-Plugins",
+    "title": "PICO CLI",
+    "category": "developer-tools",
+    "subCategory": "xr-agent-tooling",
+    "tagline": "PICO's npm CLI that installs PICO spatial/Unity skills, MCP servers and hooks into 10 coding-agent hosts.",
+    "summary": "@picoxr/pico-cli is PICO's public CLI for spatial development. One `pico-cli setup` command installs the PICO plugin bundle (skills plus MCP servers for dev knowledge and the Spatial Editor) into Claude Code, Codex, Cursor, Copilot, Trae, OpenCode, CodeBuddy, Qoder, Antigravity or Grok, either globally or per project. The same CLI handles devices, the emulator, app installs, Perfetto performance traces and JSON 'doctor' diagnostics. It is a good reference for how a hardware vendor can package its SDK for coding agents. Lucas Martinic credits 'Opus 5.5 + PICO CLI' for his full Super Mario 64 mixed-reality port on PICO (LinkedIn, 2026-10-27).",
+    "highlights": [
+      "`npm install -g @picoxr/pico-cli` then `pico-cli setup --agent-tool claude-code --platform spatial`",
+      "19 spatial skills (scene builder, Spatial Editor, emulator, Android porting, perf analysis, SpatialML) + 13 Unity skills",
+      "MCP servers launched via `npx -y @picoxr/pico-cli knowledge:server` / `editor:bootstrap`",
+      "`doctor`, `plugin doctor`, `mcp doctor` all emit `--format json` for agent-readable diagnostics",
+      "Plugin marketplace repo is Apache-2.0; the npm package declares no license or source repo"
+    ],
+    "tags": [
+      "xr",
+      "spatial-computing",
+      "pico",
+      "mcp",
+      "agent-skills",
+      "cli",
+      "claude-code",
+      "unity"
+    ],
+    "favicon": "https://www.google.com/s2/favicons?domain=picoxr.com",
+    "ogImage": "https://opengraph.githubassets.com/1/Pico-Developer/PICO-Intelligent-Plugins",
+    "kgEntity": "research/entities/tool/pico-cli.md",
+    "qualityScore": 8.0,
+    "addedAt": "2026-10-27T16:00:00Z",
+    "updatedAt": "2026-10-27T16:00:00Z"
+  },
+  {
     "id": "inspora",
     "url": "https://www.inspora.design/",
     "title": "Inspora",

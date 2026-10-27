@@ -7,7 +7,7 @@
     },
     "developer-tools": {
       "name": "Developer Tools",
-      "count": 2,
+      "count": 3,
       "description": "Tools, CLIs, platforms, and utilities that accelerate engineering workflows."
     },
     "ui-components": {
@@ -36,5 +36,5 @@
       "description": "Curated Security Tools resources and references."
     }
   },
-  "updatedAt": "2026-10-27T02:42:42.066205+00:00"
+  "updatedAt": "2026-10-27T17:19:23.810126+00:00"
 }

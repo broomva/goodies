@@ -1,5 +1,22 @@
 [
   {
+    "id": "pico-cli",
+    "title": "PICO CLI",
+    "tagline": "PICO's npm CLI that installs PICO spatial/Unity skills, MCP servers and hooks into 10 coding-agent hosts.",
+    "category": "developer-tools",
+    "tags": [
+      "xr",
+      "spatial-computing",
+      "pico",
+      "mcp",
+      "agent-skills",
+      "cli",
+      "claude-code",
+      "unity"
+    ],
+    "url": "https://github.com/Pico-Developer/PICO-Intelligent-Plugins"
+  },
+  {
     "id": "inspora",
     "title": "Inspora",
     "tagline": "A curated archive of visual design and creative work.",
